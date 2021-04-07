@@ -2,4 +2,6 @@
     experimental_http3
 }
 
-:mihaiblandu.tk
+mihaiblandu.tk {
+    /user/share/caddy/
+}
