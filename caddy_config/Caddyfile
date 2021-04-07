@@ -1,3 +1,7 @@
 {
     experimental_http3
 }
+
+:mihaiblandu.tk
+
+root * /usr/share/caddy/
