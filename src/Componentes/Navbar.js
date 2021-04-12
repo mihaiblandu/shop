@@ -9,7 +9,7 @@ function Navbar() {
     const [dropdown,setDropdown] = useState(false)
 
     const handleClick = () => setClick(!click)
-    const closeMobileMenu =()=>setClick(true)
+    const closeMobileMenu =()=>setClick(false)
 
 
     const onMouseEnter = () => {
@@ -43,7 +43,7 @@ function Navbar() {
                          onMouseEnter={onMouseEnter}
                          onMouseLeave={onMouseLeave}
                     >
-                        <Link to='/service' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
                             Service <i className='fas fa-caret-down'></i>
                         </Link>
                         { dropdown&&  <DropDown/>}
@@ -54,12 +54,12 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/sing-in' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/signin' className='nav-links' onClick={closeMobileMenu}>
                             Sign in
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/sing-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                        <Link to='/singup' className='nav-links-mobile' onClick={closeMobileMenu}>
                             Sign up
                         </Link>
                     </li>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import "./Button.css"
 function Button() {
     return (
-        <Link to="sign-up">
+        <Link to="signup">
             <button className="btn">Sign up</button>
         </Link>
     )
